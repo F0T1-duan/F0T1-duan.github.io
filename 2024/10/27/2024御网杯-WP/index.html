@@ -20,31 +20,108 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="CTF学习">
-<meta property="og:type" content="website">
-<meta property="og:title" content="F0T1-CTF">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="Miscmisc1-通知步骤 显然这里藏了东西 更改一下颜色就出来了  收获简单的文档隐写，通知做题在一起，挺好玩的 misc2-编码步骤第一段编码直接BrainFuck解码即可  第二段是JS编码，放控制台直接跑出结果   第三段也是BrainFuck解码  三段拼接即可获得完整flag 收获都是解密，考察对工具的使用和对常见编码的总结 misc3-蓝牙步骤wireshark打开流量包，搜索字符">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2024御网杯-WP">
+<meta property="og:url" content="http://example.com/2024/10/27/2024%E5%BE%A1%E7%BD%91%E6%9D%AF-WP/index.html">
 <meta property="og:site_name" content="F0T1-CTF">
-<meta property="og:description" content="CTF学习">
+<meta property="og:description" content="Miscmisc1-通知步骤 显然这里藏了东西 更改一下颜色就出来了  收获简单的文档隐写，通知做题在一起，挺好玩的 misc2-编码步骤第一段编码直接BrainFuck解码即可  第二段是JS编码，放控制台直接跑出结果   第三段也是BrainFuck解码  三段拼接即可获得完整flag 收获都是解密，考察对工具的使用和对常见编码的总结 misc3-蓝牙步骤wireshark打开流量包，搜索字符">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240924154916931.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240924155011128.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922081754666.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922084013300.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922090913274.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240926111813988.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240926113248451.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240924150956915.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240924153733478.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240924154015021.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240924154200387.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240926114600896.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240926114837654.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240926114931076.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240926115301048.png">
+<meta property="og:image" content="c:\Users\Administrator\OneDrive\%E4%BD%9C%E4%B8%9A\WXWork\1688856875484326\Cache\Image\2024-09\%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_1727256079361.png">
+<meta property="og:image" content="c:\Users\Administrator\OneDrive\%E4%BD%9C%E4%B8%9A\WXWork\1688856875484326\Cache\Image\2024-09\8f007ce9a96debf5cbf85631fb591f1.png">
+<meta property="og:image" content="c:\Users\Administrator\OneDrive\%E4%BD%9C%E4%B8%9A\WXWork\1688856875484326\Cache\Image\2024-09\%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_17272630665376.png">
+<meta property="og:image" content="c:\Users\Administrator\OneDrive\%E4%BD%9C%E4%B8%9A\WXWork\1688856875484326\Cache\Image\2024-09\%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_17272630822832.png">
+<meta property="og:image" content="c:\Users\Administrator\OneDrive\%E4%BD%9C%E4%B8%9A\WXWork\1688856875484326\Cache\Image\2024-09\%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_17272631627837.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240926114202161.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929175339437.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929175423093.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929180700711.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240928161245844.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240928161349967.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240928161450358.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240928162014451.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240926195252166.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240926200509596.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240928153245194.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240923212821051.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240923212852566.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240923212955282.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240923213215173.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240923213248687.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240924195944466.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240923215555927.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922160722366.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922160746079.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922175219339.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240926173521134.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240926192744443.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240926173842378.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922172415468.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922172133867.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922172000338.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922164121037.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922164135304.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922164201427.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922164241228.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922164523660.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922164539449.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240922164629404.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929165304889.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929171158104.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929171138195.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929165955793.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929170347326.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929115452847.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929111513708.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929111645192.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929112419460.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929112705132.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929113113140.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929123426461.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929123310405.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929123255677.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929182107355.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929183727110.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929185020506.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929190127735.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929190624136.png">
+<meta property="og:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240929191119474.png">
+<meta property="article:published_time" content="2024-10-27T13:52:14.000Z">
+<meta property="article:modified_time" content="2024-10-27T13:53:38.800Z">
 <meta property="article:author" content="CTF-DUAN">
 <meta property="article:tag" content="CTF">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240924154916931.png">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2024/10/27/2024%E5%BE%A1%E7%BD%91%E6%9D%AF-WP/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>F0T1-CTF</title>
+  <title>2024御网杯-WP | F0T1-CTF</title>
   
 
 
@@ -143,9 +220,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -161,10 +239,9 @@
       <meta itemprop="name" content="F0T1-CTF">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/10/27/2024%E5%BE%A1%E7%BD%91%E6%9D%AF-WP/" class="post-title-link" itemprop="url">2024御网杯-WP</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          2024御网杯-WP
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -188,7 +265,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h1><h2 id="misc1-通知"><a href="#misc1-通知" class="headerlink" title="misc1-通知"></a>misc1-通知</h2><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240924154916931.png" alt="image-20240924154916931"></p>
+        <h1 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h1><h2 id="misc1-通知"><a href="#misc1-通知" class="headerlink" title="misc1-通知"></a>misc1-通知</h2><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240924154916931.png" alt="image-20240924154916931"></p>
 <p>显然这里藏了东西</p>
 <p>更改一下颜色就出来了</p>
 <p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240924155011128.png" alt="image-20240924155011128"></p>
@@ -482,145 +559,30 @@
 
 <h3 id="收获-19"><a href="#收获-19" class="headerlink" title="收获"></a>收获</h3><p>考察点相当多，还考查细心程度，写出来真是太疯狂了</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/27/%E5%B0%81%E7%A5%9E%E5%8F%B0-MiscWP/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="CTF-DUAN">
-      <meta itemprop="description" content="CTF学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="F0T1-CTF">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/10/27/%E5%B0%81%E7%A5%9E%E5%8F%B0-MiscWP/" class="post-title-link" itemprop="url">封神台-MiscWP</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2024-10-27 21:26:04 / 修改时间：21:27:07" itemprop="dateCreated datePublished" datetime="2024-10-27T21:26:04+08:00">2024-10-27</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="封神台"><a href="#封神台" class="headerlink" title="封神台"></a>封神台</h1><h2 id="1、图片隐写"><a href="#1、图片隐写" class="headerlink" title="1、图片隐写"></a>1、图片隐写</h2><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008170758630.png" alt="image-20241008170758630"></p>
-<p>html实体编码</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008170820377.png" alt="image-20241008170820377"></p>
-<h2 id="2、键盘敲击RC4"><a href="#2、键盘敲击RC4" class="headerlink" title="2、键盘敲击RC4"></a>2、键盘敲击RC4</h2><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008172810076.png" alt="image-20241008172810076"></p>
-<p>因为RC4需要秘钥</p>
-<p>三个字符串，重复两次就是六位</p>
-<p>敲击，字符串，键盘吗？</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008173039925.png" alt="image-20241008173039925"></p>
-<p>zvvzvv</p>
-<p>应该就是秘钥了</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008173239693.png" alt="image-20241008173239693"></p>
-<p>key{zkz-good-kkey}</p>
-<p>键盘敲击暗示了key，文字游戏，暗藏玄机！！！</p>
-<h2 id="5、德军密电密码表"><a href="#5、德军密电密码表" class="headerlink" title="5、德军密电密码表"></a>5、德军密电密码表</h2><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008174553456.png" alt="image-20241008174553456"></p>
-<p>不会，就看wp：</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008174446027.png" alt="image-20241008174446027"></p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008174508785.png" alt="image-20241008174508785"></p>
-<p>学到了，不过也能想到是密码表</p>
-<h2 id="8、九宫格键盘"><a href="#8、九宫格键盘" class="headerlink" title="8、九宫格键盘"></a>8、九宫格键盘</h2><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008175051090.png" alt="image-20241008175051090"></p>
-<p>这里是直接破解了</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008175014733.png" alt="image-20241008175014733"></p>
-<p>不过确实就是老年机九宫格发短信</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008175232839.png" alt="image-20241008175232839"></p>
-<h2 id="11、百度识图"><a href="#11、百度识图" class="headerlink" title="11、百度识图"></a>11、百度识图</h2><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008171144360.png" alt="image-20241008171144360"></p>
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008171216066.png" alt="image-20241008171216066" style="zoom: 50%;" />
-
-<p>百度识图</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008171537498.png" alt="image-20241008171537498"></p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008171610566.png" alt="image-20241008171610566"></p>
-<p>这题。。。挺奇怪</p>
-<h2 id="12、打油诗"><a href="#12、打油诗" class="headerlink" title="12、打油诗"></a>12、打油诗</h2><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008170157884.png" alt="image-20241008170157884" style="zoom:80%;" />
-
-<p>打油诗：由口中,由口井,圭土,由口人,由中人,由中中,由口主,由中中,圭土,由凹凸,由由中,由目圭,克工</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008170328322.png" alt="image-20241008170328322"></p>
-<p>fl_g{zkz_dpm6</p>
-<p>flag{zkz_dpm6}</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008170407422.png" alt="image-20241008170407422"></p>
-<p>对了，真奇怪</p>
-<h2 id="13、base转图片"><a href="#13、base转图片" class="headerlink" title="13、base转图片"></a>13、base转图片</h2><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008180657554.png" alt="image-20241008180657554"></p>
-<p>打开后提示是base64</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008180644021.png" alt="image-20241008180644021"></p>
-<p>这么长，先解一段试试</p>
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008180817204.png" alt="image-20241008180817204" style="zoom:80%;" />
-
-<p>png是文件头吗，直接转为hex</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008180922628.png" alt="image-20241008180922628"></p>
-<p>应该就是图片的信息</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008180956676.png" alt="image-20241008180956676"></p>
-<p>果然就是base转图片</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008181006292.png" alt="image-20241008181006292"></p>
-<p>当然是AI提取啦，不过空格记得去掉</p>
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241008181025132.png" alt="image-20241008181025132" style="zoom:80%;" />
+        
 
 
-
-
-
-<h2 id="15、跳舞小人"><a href="#15、跳舞小人" class="headerlink" title="15、跳舞小人"></a>15、跳舞小人</h2><p>给了一个gif动图，很明显看到有一个二维码</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241012211710199.png" alt="image-20241012211710199"></p>
-<p>查看看来要拼接一下</p>
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241012211747188.png" alt="image-20241012211747188" style="zoom:67%;" />
-
-<p>提取一个角</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241012211847715.png" alt="image-20241012211847715"></p>
-<p>完成拼接后，直接扫即可</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241012211952487.png" alt="image-20241012211952487"></p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/10/27/%E5%B0%81%E7%A5%9E%E5%8F%B0-MiscWP/" rel="prev" title="封神台-MiscWP">
+      <i class="fa fa-chevron-left"></i> 封神台-MiscWP
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -673,6 +635,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Misc"><span class="nav-number">1.</span> <span class="nav-text">Misc</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#misc1-%E9%80%9A%E7%9F%A5"><span class="nav-number">1.1.</span> <span class="nav-text">misc1-通知</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.1.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7"><span class="nav-number">1.1.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#misc2-%E7%BC%96%E7%A0%81"><span class="nav-number">1.2.</span> <span class="nav-text">misc2-编码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#misc3-%E8%93%9D%E7%89%99"><span class="nav-number">1.3.</span> <span class="nav-text">misc3-蓝牙</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-2"><span class="nav-number">1.3.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-2"><span class="nav-number">1.3.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#misc4-base"><span class="nav-number">1.4.</span> <span class="nav-text">misc4-base</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-3"><span class="nav-number">1.4.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-3"><span class="nav-number">1.4.2.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PWN"><span class="nav-number">2.</span> <span class="nav-text">PWN</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#pwn1-asm"><span class="nav-number">2.1.</span> <span class="nav-text">pwn1-asm</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-4"><span class="nav-number">2.1.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-4"><span class="nav-number">2.1.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pwn2-ret"><span class="nav-number">2.2.</span> <span class="nav-text">pwn2-ret</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-5"><span class="nav-number">2.2.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-5"><span class="nav-number">2.2.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pwn3-normal-pwn"><span class="nav-number">2.3.</span> <span class="nav-text">pwn3-normal pwn</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-6"><span class="nav-number">2.3.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-6"><span class="nav-number">2.3.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pwn4-no-fmtstr"><span class="nav-number">2.4.</span> <span class="nav-text">pwn4-no_fmtstr</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-7"><span class="nav-number">2.4.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-7"><span class="nav-number">2.4.2.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Crypto"><span class="nav-number">3.</span> <span class="nav-text">Crypto</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#crypto1-%E4%B8%8D%E5%B0%8F%E5%BF%83"><span class="nav-number">3.1.</span> <span class="nav-text">crypto1-不小心</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-8"><span class="nav-number">3.1.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-8"><span class="nav-number">3.1.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#crypto2-justmath"><span class="nav-number">3.2.</span> <span class="nav-text">crypto2-justmath</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-9"><span class="nav-number">3.2.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-9"><span class="nav-number">3.2.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#crypto3-base"><span class="nav-number">3.3.</span> <span class="nav-text">crypto3-base</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-10"><span class="nav-number">3.3.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-10"><span class="nav-number">3.3.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#crypto4-easy-crypto1"><span class="nav-number">3.4.</span> <span class="nav-text">crypto4-easy_crypto1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-11"><span class="nav-number">3.4.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-11"><span class="nav-number">3.4.2.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Web"><span class="nav-number">4.</span> <span class="nav-text">Web</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#web1-input-data"><span class="nav-number">4.1.</span> <span class="nav-text">web1-input_data</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-12"><span class="nav-number">4.1.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-12"><span class="nav-number">4.1.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#web2-admin"><span class="nav-number">4.2.</span> <span class="nav-text">web2-admin</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-13"><span class="nav-number">4.2.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-13"><span class="nav-number">4.2.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#web3-flask"><span class="nav-number">4.3.</span> <span class="nav-text">web3-flask</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-14"><span class="nav-number">4.3.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-14"><span class="nav-number">4.3.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#web4-FLAG"><span class="nav-number">4.4.</span> <span class="nav-text">web4-FLAG</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-15"><span class="nav-number">4.4.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-15"><span class="nav-number">4.4.2.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reverse"><span class="nav-number">5.</span> <span class="nav-text">Reverse</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#re1-ez-apk"><span class="nav-number">5.1.</span> <span class="nav-text">re1-ez_apk</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-16"><span class="nav-number">5.1.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-16"><span class="nav-number">5.1.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re2-%E6%9C%BA%E5%99%A8%E7%8C%AB"><span class="nav-number">5.2.</span> <span class="nav-text">re2-机器猫</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-17"><span class="nav-number">5.2.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-17"><span class="nav-number">5.2.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re3-%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90"><span class="nav-number">5.3.</span> <span class="nav-text">re3-文件分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-18"><span class="nav-number">5.3.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-18"><span class="nav-number">5.3.2.</span> <span class="nav-text">收获</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re4-CSMazeee"><span class="nav-number">5.4.</span> <span class="nav-text">re4-CSMazeee</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4-19"><span class="nav-number">5.4.1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B6%E8%8E%B7-19"><span class="nav-number">5.4.2.</span> <span class="nav-text">收获</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
